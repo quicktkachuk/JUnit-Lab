@@ -31,8 +31,23 @@ public class CILabTest {
     {
 //        fail("Not yet implemented");
         this.myString.setString("leetcode");
-        assertFalse(this.myString.detectCapitalUse());
+        assertTrue(this.myString.detectCapitalUse());
     }
 
+    @Test
+    public void detectCapitalUseTest3()
+    {
+//        fail("Not yet implemented");
+        this.myString.setString("Hello");
+        assertTrue(this.myString.detectCapitalUse());
+    }
+
+    @Test
+    public void detectCapitalUseTest4()
+    {
+//        fail("Not yet implemented");
+        this.myString.setString("hEllo");
+        assertFalse(this.myString.detectCapitalUse());
+    }
 
 }
